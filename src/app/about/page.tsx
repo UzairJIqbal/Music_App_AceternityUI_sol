@@ -3,7 +3,7 @@ import React from "react";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 
-const page = () => {
+const Page = () => {
     const images = [
         "/A.jpg",
         "/B.jpg",
@@ -49,11 +49,16 @@ const page = () => {
                             </h1>
                         </>
                     }
-                    children={<ThreeDMarquee images={images}  className=" ring-neutral-700/10 rounded-3xl mx-auto my-10 max-w-7xl ring-1 "/>}
-                ></ContainerScroll>
+                >
+                    <ThreeDMarquee
+                        images={images}
+                        className="ring-neutral-700/10 rounded-3xl mx-auto my-10 max-w-7xl ring-1"
+                    />
+                </ContainerScroll>
+
             </div>
         </div>
     );
 };
 
-export default page;
+export default Page;

@@ -17,7 +17,7 @@ const ContactImageArray = [
   "https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=800&q=80",
   "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",
 ];
-const page = () => {
+const Page = () => {
   const [input, setinput] = useState("");
   return (
   
@@ -124,4 +124,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
